@@ -16,8 +16,8 @@ public class Main {
     public String index() {
         return "Hello World";
     }
-    @GetMapping
-    void printing(){
-        System.out.println("Hello my babes");
-    }
+//    @GetMapping
+//    void printing(){
+//        System.out.println("Hello my babes");
+//    }
 }
