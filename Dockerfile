@@ -3,7 +3,7 @@ COPY .. .
 RUN mvn -B clean package -DskipTests
 
 FROM openjdk:17
-COPY --from=build target/*.jar signInApp.jar
+COPY --from=build target/*.jar testProject.jar
 
-ENTRYPOINT ["java", "-jar", "-Dserver.port=8080", "helloWorldApp.jar"]
+ENTRYPOINT ["java", "-jar", "-Dserver.port=8080", "testProject.jar"]
 
