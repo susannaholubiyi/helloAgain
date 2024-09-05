@@ -36,7 +36,7 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Build Docker image
-        run: docker build -t oluwaseyiolubiyi/hello-world:latest .
+        run: docker build -t oluwaseyiolubiyi/test-demo:latest .
 
       - name: Push Docker image to Docker Hub
-        run: docker push oluwaseyiolubiyi/hello-world:latest
+        run: docker push oluwaseyiolubiyi/test-demo:latest
